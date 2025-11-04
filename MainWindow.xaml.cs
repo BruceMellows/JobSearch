@@ -202,6 +202,8 @@ public partial class MainWindow : Window
 			txtNotes.Text = string.Empty;
 			cmbCompany.SelectedIndex = -1;
 			cmbStatus.SelectedIndex = 0;
+			btnUpdateRole.IsEnabled = false;
+			btnAddRole.IsEnabled = true;
 			return;
 		}
 
@@ -215,6 +217,8 @@ public partial class MainWindow : Window
 		txtNotes.Text = notes;
 		SetSelectedIndex<CompanyItem>(cmbCompany, item => item.Name == companyName);
 		SetSelectedIndex<StatusItem>(cmbStatus, item => item.Name == statusName);
+		btnUpdateRole.IsEnabled = true;
+		btnAddRole.IsEnabled = false;
 	}
 
 	static void InitializeDatabase(SqliteConnection connection)

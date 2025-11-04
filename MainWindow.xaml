@@ -35,8 +35,8 @@
 				<TextBox x:Name="txtNotes" Grid.Row="1" Grid.RowSpan="2" Grid.Column="3" AcceptsReturn="True" Margin="8,2,8,2" HorizontalAlignment="Stretch"/>
 
 				<StackPanel Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="4" Orientation="Horizontal" Margin="8,2,8,2">
-					<Button x:Name="btnAddRole" Content="Add Role" Width="100" Margin="8" Click="OnAddRoleClick"/>
-					<Button x:Name="btnUpdateRole" Content="Update Role" Width="100" Margin="8" Click="OnUpdateRoleClick"/>
+					<Button x:Name="btnAddRole" Content="Add Role" Width="100" Margin="8" Click="OnAddRoleClick" IsEnabled="True"/>
+					<Button x:Name="btnUpdateRole" Content="Update Role" Width="100" Margin="8" Click="OnUpdateRoleClick" IsEnabled="False"/>
 				</StackPanel>
 
 				<DataGrid x:Name="dgRoles"
